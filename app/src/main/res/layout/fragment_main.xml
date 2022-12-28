@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_16dp"
+    tools:context=".ui.screens.MainFragment">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/margin_24dp"
+        android:layout_height="@dimen/margin_24dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/topGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_input_layout_bin" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_bin"
+        style="@style/textInputLayout"
+        android:hint="@string/enter_first_digits"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_bin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="6"
+            android:inputType="numberDecimal" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <include layout="@layout/bin_card_layout"
+        android:id="@+id/binCard_layout"
+        />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/binCard_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="binCard_layout"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

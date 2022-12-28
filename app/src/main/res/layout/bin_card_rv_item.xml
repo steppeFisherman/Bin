@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    style="@style/rv_main_container">
+
+    <TextView
+        android:id="@+id/bin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bin"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/bin_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_textView"
+        app:layout_constraintStart_toStartOf="@+id/bank_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bank"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topGuideline" />
+
+    <TextView
+        android:id="@+id/bank_name"
+        android:layout_width="@dimen/size_0"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_textView"
+        tools:text="Sberbank"
+        android:layout_marginStart="@dimen/margin_8dp"
+        app:layout_constraintStart_toEndOf="@+id/bank"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuideline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toTopOf="@+id/topGuideline" />
+
+    <TextView
+        android:id="@+id/bank_url_history"
+        android:layout_width="@dimen/size_0"
+        android:layout_height="wrap_content"
+        android:textColor="@color/deep_sky_blue"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        tools:text="sberbank.ru"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/centerGuideline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@+id/bank_name" />
+
+    <TextView
+        android:id="@+id/bank_phone_history"
+        android:layout_width="@dimen/size_0"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_green"
+        tools:text="123456789hhhhhhhhhhhhhh"
+        android:layout_marginTop="@dimen/margin_4dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuideline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@+id/bank_name" />
+
+    <TextView
+        android:id="@+id/scheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scheme_network"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barrier" />
+
+    <TextView
+        android:id="@+id/scheme_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_textView"
+        tools:text="VISA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheme" />
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:text="@string/brand"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scheme_type" />
+
+    <TextView
+        android:id="@+id/brand_type"
+        android:layout_width="@dimen/size_0"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_textView"
+        tools:text="VISA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/centerGuideline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@+id/brand" />
+
+    <TextView
+        android:id="@+id/card_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:text="@string/card_number"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brand_type" />
+
+    <TextView
+        android:id="@+id/length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/length"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_number" />
+
+    <TextView
+        android:id="@+id/length_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_textView"
+        tools:text="16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/length" />
+
+    <TextView
+        android:id="@+id/luhn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/luhn"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toEndOf="@+id/card_number"
+        app:layout_constraintTop_toBottomOf="@+id/card_number" />
+
+    <TextView
+        android:id="@+id/luhn_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toEndOf="@+id/card_number"
+        app:layout_constraintTop_toBottomOf="@+id/luhn" />
+
+    <TextView
+        android:id="@+id/luhn_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toEndOf="@+id/luhn_yes"
+        app:layout_constraintTop_toBottomOf="@+id/luhn" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/barrier" />
+
+    <TextView
+        android:id="@+id/type_debit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/debit"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/type" />
+
+    <TextView
+        android:id="@+id/type_credit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/credit"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toEndOf="@+id/type_debit"
+        app:layout_constraintTop_toBottomOf="@+id/type" />
+
+    <TextView
+        android:id="@+id/prepaid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prepaid"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+        app:layout_constraintTop_toTopOf="@+id/brand" />
+
+    <TextView
+        android:id="@+id/prepaid_yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/prepaid" />
+
+    <TextView
+        android:id="@+id/prepaid_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toEndOf="@+id/prepaid_yes"
+        app:layout_constraintTop_toBottomOf="@+id/prepaid" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/country"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+        app:layout_constraintTop_toTopOf="@+id/card_number" />
+
+    <TextView
+        android:id="@+id/country_name"
+        android:layout_width="@dimen/size_0"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_textView"
+        tools:text="Russia"
+        app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightGuideline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@+id/country" />
+
+    <TextView
+        android:id="@+id/lat"
+        android:layout_width="@dimen/size_0"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_category_textView"
+        tools:text="latitude"
+        android:textSize="@dimen/sizeText_12sp"
+        app:layout_constraintStart_toStartOf="@+id/centerGuideline"
+        app:layout_constraintEnd_toEndOf="@+id/rightQuarterGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/country_name" />
+
+    <TextView
+        android:id="@+id/lng"
+        android:layout_width="@dimen/size_0"
+        android:layout_height="wrap_content"
+        tools:text="longitude"
+        android:textSize="@dimen/sizeText_12sp"
+        android:textColor="@color/grey_category_textView"
+        app:layout_constraintStart_toStartOf="@+id/rightQuarterGuideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country_name" />
+
+    <ImageButton
+        android:id="@+id/btn_location_history"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_location_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/country"
+        app:layout_constraintBottom_toBottomOf="@+id/country"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/centerGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightQuarterGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="0dp"
+        />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="@dimen/size_0"
+        android:layout_height="@dimen/size_0"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="bank_name, bank_phone_history"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

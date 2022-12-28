@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Bin</string>
+    <string name="enter_first_digits">Введите первые 6 цифр карты</string>
+    <string name="card_number">CARD NUMBER</string>
+    <string name="length">LENGTH</string>
+    <string name="luhn">LUHN</string>
+    <string name="yes">Yes</string>
+    <string name="no">/No</string>
+    <string name="scheme_network">SCHEME/NETWORK</string>
+    <string name="brand">BRAND</string>
+
+    <string name="no_connection_exception_message">Что то пошло не так, нет соединения</string>
+    <string name="database_exception_message">Что то пошло не так, ошибка базы данных</string>
+    <string name="http_exception_message">Что то пошло не так, ошибка сервера</string>
+    <string name="generic_exception_message">Что то пошло не так</string>
+    <string name="bin">BIN</string>
+    <string name="bank">BANK</string>
+    <string name="type">TYPE</string>
+    <string name="country">COUNTRY</string>
+    <string name="prepaid">PREPAID</string>
+    <string name="debit">DEBIT</string>
+    <string name="credit">/CREDIT</string>
+    <string name="lat_placeHolder">latitude: %s</string>
+    <string name="lng_placeHolder">longitude: %s</string>
+
+    <string name="phone_placeHolder">+%s</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+</resources>
