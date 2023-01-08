@@ -12,4 +12,4 @@ ___
 ___
 _Стэк:_
 
-__Retrofit, Room, Hilt, Navigation Component, MVVM, LiveData, Kotlin Coroutines, ViewBinding__                
+__Retrofit, Room, Hilt, Navigation Component, MVVM, LiveData, Kotlin Coroutines, ViewBinding, Google Maps__                
